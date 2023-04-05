@@ -1,515 +1,86 @@
-
-/* Fonts Google Oswald https://fonts.google.com/specimen/Oswald */
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-/* Fonts téléchargée sur Google et mis dans le dossier puis importée dans le projet
-https://fonts.google.com/specimen/DM+Serif+Display?query=dm+ser */
-@font-face {
-    font-family: "Montserrat";
-    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
-    /* https://fonts.google.com/specimen/Montserrat?query=montserrat*/ 
-}
-
-
-
-
-:root{ /* Prend en compte les variables suivantes dans le fichier : */
-    --color1: #ede4d0;
-    --color2: pink ;
-    --color3: #393b4b;
-    --color4: rgb(18, 19, 18)   ;
-
-    --color11:blue;
-    --color12:fuchsia;
-    /* couleur : http://davidbau.com/colors/ */
-}
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* ajuste mieux les boites, meilleure organisation */
-    font-family: Montserrat, sans-serif;
-    list-style: none;
+    list-style-type: none;
+    outline: none;
+
 }
-
-
-
-
-body{ /*display block(prend toute la largeur de la page) et margin 8px de base */
-    
-    
-     
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color : var(--color1);
-    
-    align-items: center; /* aligne veticalement les éléments */
-    justify-content: center; /* aligne horizontalement les éléments */
-    
-    
-    }
-
-
 
 li {
     list-style: none; /* pas de points pour les listes */
 }
 
-
-
-nav{
-    background: white;
-    padding: 10px;
-}
-
-
-
-nav ul{
+body{ /*display block(prend toute la largeur de la page) et margin 8px de base */
+    min-height: 100vh;
+    background: url(./assets/img/nature.jpg) fixed center/cover;
+    
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : white;
     display: flex;
-    justify-content: space-between;  
-    align-items : center; 
-
-    color: black;
-    height: 86%;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin: 5px 2%;
-
+    align-items: center; /* aligne veticalement les éléments */
+    justify-content: center; /* aligne horizontalement les éléments */
+    overflow: hidden; /* cache tout ce qui dépasse du body (vaisseau qui sort de l'écran */
 }
 
-nav li{
-    position: relative;
+
+.presentation
+{
+    background:  rgba(0, 0, 0, 0.877);
+    height: 100vh;
+    width: 100vw;
+     
 }
 
-nav li:first-child{
-    color: rebeccapurple;
-}
-nav li:first-child:before{
-    content:"";
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    background-color: rebeccapurple;
-    transform: translateY(-20px);
-}
 
-nav li:hover:before{
-    content:"";
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    background-color: rebeccapurple;
-    transform: translateY(-20px);
-}
 
-nav li:last-child::before{
-    background: none;
-}
 
-#language{
-    background: lightgrey;
-    padding: 5px 15px;
-    border-radius: 15px;
-
-}
-
+ul{
  
-.main-header img{
-    max-width: 70%; 
-    padding: 3%;
+    text-align: center;
 }
 
-
-
-.main-header{
-    background: url(./assets/img/bg.jpg) fixed center/cover;
-    height: 30%;
-    text-align: center;  
-    padding: 60px;
-}
-
- .main-header h1{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;  
-    padding: 20px;
-
-}
-
-.main-header button{
-    background-color: transparent;
-    color: white;    
-    padding: 15px 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.4s ease;
-    cursor: pointer;
-    letter-spacing: 2px; /* espace entre les lettes de 2px */
-
-}
-.main-header i{ 
-    transform: translateX(5px); /* décale le > de 5px dans le bouton */
-}
-
-.main-header button:hover{
-    color: black;
-    background-color: whitesmoke;
-}
-
-.icon-part-container button:hover{
-    color: black;
-    background-color: whitesmoke;
-}
-.header-news button:hover{
-    color: whitesmoke;
-    background-color: black;
-}
-
-
-
-.header-text{
-    background-color: white;
- }
-
-.header-text p{
-    color: black;
-
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;  
-    margin: 0px 10%; 
-    padding: 40px;
-}
-
-
-.icon-part{
-
-    background-color: rgb(17, 12, 12);
-    padding: 60px 8%;
-
-}
-
-
-.icon-part-container{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items : center; 
-    height: 86%;
-}
-
-.list-icon-part{
-    text-align: center;  
-    padding: 8%;
- 
-}
-
-.list-icon-part h3{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;  
-    padding: 10px;
-}
-
-
-
-
-.icon-part button{
-    background-color: transparent;
-    color: white;    
-    padding: 10px 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px; 
-    color: antiquewhite;
-    transition: 0.4s ease;
-    cursor: pointer;
-
-}
-
-
-
-.news-part{
-    background-color: whitesmoke;
-}
-
-.header-news{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    align-items : center; 
-    margin: 0 15%;
-    padding: 90px 0px 40px;
-}
-
-.left-part h2{
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 2px; /* espace entre les lettes de 2px */
-}
-
-.left-part p{
-    color: black;
-    font-weight: bold;
-}
-
-.right-part button{
-    background-color: transparent;
-    color: black;    
-    padding: 10px 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px;    
-    transition: 0.4s ease;
-    cursor: pointer;
-}
-
-
-
-.main-news-container{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 40px 15%;
-}
-
-
-.main-news-container mn-pic{
-    position: relative;
-    top: 50%;
-
-}
-
-.main-news-container img{
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.083);
-    backdrop-filter: blur(2px); 
-    border-radius: 5px; /* arrondir les bords du cadre */
-
-    object-fit: cover;
-    width: 85%;
-    max-width: 350px;
-
-
-}
-
-.main-news-container h4{
-    color: black;    
-    margin: 10px 0;
-    max-width: 250px;
-}
-
-.main-news-container p{
-    color: black;    
-    font-size: 0.8rem;
-    line-height: 20px;
-    margin: 10px 0 40px;
-    max-width: 250px;
-}
-
-.main-news-container a{
-    color: rebeccapurple;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-.main-news-container a:hover{
-    color: gold;
-}
-
-.news{
-    position: relative;
-}
-.link{
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-}
-
-
-.contact{
-    background-color: white;
+li{
+    margin: 10%;
     
 }
-.contact-container p{
-    color: black;
-    font-weight: bold;
-    font-size: 0.8rem;
+
+a{
+    background: whitesmoke;
+    border: none;
     padding: 10px 0;
-}
-
-.contact-container h6{
     color: black;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-
-.contact-container h3{
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    padding: 10px 0;
-}
-
-.contact-container .footer-logos{
-    color: black;
-    padding-bottom: 15px;
-}
-
-.contact-list{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% ;
-    padding: 40px 7%;
-    position: relative;
-}
-
-
-#contact-img img{
-    display: block;
+    border-radius: 150px;
     margin: 0 auto;
-}
-
-.contact-list h5{
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px 0;
-}
-.footer-logos i{
-    margin: 0 12px 0 0;
-
-}
-.contact-list li{
-    margin: 10px 0;
-}
-.contact-list .list{
-    padding: 0 8%;
-}
-
-.contact-list a{
-    color: rebeccapurple;
-    font-size: 0.7rem;
-    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+    outline: none;
+    max-width: 250px;
     text-decoration: none;
-}    
-
-
-
-
-.contact-list::after{ /* barre de séparation */
-    content: "";
-
-    background-color: black;
-    height: 1px;
-    width: calc(100% - 100px); /* Prend toute la largeur - 100px */ 
-    left: 5%;
-    bottom: -10px; /* par rapport à son parent */
-    position: absolute;
+    user-select: none;
+    opacity: initial;
 }
 
-
-
-.contact-medias{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    padding: 40px 10%;
-}
-
-
-
-
-.medias-logos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
- 
-
-
-footer{
-    background-color: rgb(17, 12, 12);
-}
-
-footer h3{
+a:hover {
+    border: 1px solid white;
     color: white;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 20px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-footer ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 8%;
-}
-
-/* ************** MEDIA QUERIES ************** */
-/* RESPONSIVE  https://youtu.be/iSWjmVcfQGg?t=7485 */
+a:active{
+    transform: scale(1.2);  
+  }
 
 
-@media screen and (max-width: 1000px) { /* Tablette, actif si max-width à 1000px */
-
-    nav li{
-        font-size: 0.6rem;
-    }
-
-    .medias-logos img{
-        width: 75%;
-    }
-    .icon-part{
-        padding: 0;
-    }
-    .list-icon-part{
-        padding: 20px 0;        
-    }
-    footer ul{
-        flex-wrap: wrap; /* Va à la ligne quand il n'y a plus de place */
-    }
-    footer li{
-        margin: 5px;
-    }
-    .contact-list{
-        display: none;
-    }
+@media screen and (max-width: 870px) { /* Tablette, actif si max-width à 870px */
 }
   
-@media screen and (max-width: 770px) { /* Mobile, actif si max-width à 650px */
-    nav li{
-        display: none;
-    }
-    .contact{
-        display: none;
-    }
-    .list-icon-part{
-        padding: 20px 5%;        
-    }
-    .icon-part{
-        padding: 0;
-    }
-    .icon-part-container{
-        display: block;
-    }
-    .header-news{
-        display: block;
-    }
-    .main-news-container{
-        display: block;
-    }
+@media screen and (max-width: 650px) { /* Mobile, actif si max-width à 650px */
 }
 
 
 
-
-
-/* Pseudo classes :
-after, before, checked, focus, placeholder, active, hover, visited              
-
-Filter :
-drop-shadow(), brightness(), blur()
-
-*/
 
