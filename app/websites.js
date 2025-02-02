@@ -11,7 +11,7 @@ export const websites = [
   }, 
   {
     "name": "Gaming Campus",
-    "text": "Exercice d'intégration web en HTML/CSS",
+    "text": "HTML/CSS Web Integration Exercise from a Mockup",
     "img": "bg-gamingcampus.jpg",
     "url": "  https://init-dev17.github.io/CSS-TP5-GamingCampus/",
     "font": "Montserrat, sans-serif",
@@ -20,7 +20,7 @@ export const websites = [
   },
   {
     "name": "Mountain vacations",
-    "text": "Exercice d'intégration web en HTML/SASS",
+    "text": "HTML/SASS Web Integration Exercise from a Mockup",
     "img": "bg-montagne.jpg",
     "url": "https://init-dev17.github.io/SASS-TP1-Montagne/",
     "font": "Merriweather",
