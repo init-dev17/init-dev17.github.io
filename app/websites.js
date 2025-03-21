@@ -1,17 +1,17 @@
 
 export const websites = [
   {
-    "name": "READY PLAY EARTH2",
-    "text": "Earth2 build a 1:1 scale virtual Earth that will not only allow you to play, explore and experience.",
-    "img": "pexels-photo-355935.jpeg",
-    "url": "https://init-dev17.github.io/101---data-Earth2",
-    "font": "Audiowide",
-    "fontSize": "1.8rem",
+    "name": "O'Coffee",
+    "text": "MVC Project with O'Clock School, nginx server and RDBMS PostgreSQL on VPS",
+    "img": "pexels-ifreestock-585753.jpg",
+    "url": "http://ocoffee.init17.com/",
+    "font": "Montserrat",
+    "fontSize": "4rem",
     "color": "",
   }, 
   {
     "name": "Gaming Campus",
-    "text": "HTML/CSS Web Integration Exercise from a Mockup",
+    "text": "Exercice d'intégration web en HTML/CSS",
     "img": "bg-gamingcampus.jpg",
     "url": "  https://init-dev17.github.io/CSS-TP5-GamingCampus/",
     "font": "Montserrat, sans-serif",
@@ -20,13 +20,22 @@ export const websites = [
   },
   {
     "name": "Mountain vacations",
-    "text": "HTML/SASS Web Integration Exercise from a Mockup",
+    "text": "Exercice d'intégration web en HTML/SASS",
     "img": "bg-montagne.jpg",
     "url": "https://init-dev17.github.io/SASS-TP1-Montagne/",
     "font": "Merriweather",
     "fontSize": "2.7rem",
     "color": "",
   },
+  {
+    "name": "READY PLAY EARTH2",
+    "text": "Earth2 build a 1:1 scale virtual Earth that will not only allow you to play, explore and experience.",
+    "img": "pexels-photo-355935.jpeg",
+    "url": "https://init-dev17.github.io/101---data-Earth2",
+    "font": "Audiowide",
+    "fontSize": "1.8rem",
+    "color": "",
+  }, 
   {
     "name": "Eisenhower matrix",
     "text": "The Eisenhower Matrix is a productivity, prioritization, and time-management framework designed to help you prioritize a list of tasks or agenda items.",
