@@ -19,6 +19,10 @@
   font-family: "SawarabiMincho";
   src: url(../../assets/fonts/SawarabiMincho/SawarabiMincho-Regular.ttf);
 }
+@font-face {
+  font-family: "Satisfy";
+  src: url(../../assets/fonts/Satisfy/Satisfy-Regular.ttf);
+}
 @font-face { 
   font-family: "Tektur";
   src: url(../../assets/fonts/Tektur-VariableFont_wdth\,wght.ttf);

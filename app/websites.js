@@ -1,6 +1,15 @@
 
 export const websites = [
   {
+    "name": "BlablaBook",
+    "text": "Apotheosis Project with O'Clock School",
+    "img": "blablabook.jpeg",
+    "url": "https://blablabook.init17.com/",
+    "font": "Satisfy",
+    "fontSize": "3rem",
+    "color": "",
+  }, 
+  {
     "name": "O'Coffee",
     "text": "MVC Project with O'Clock School, nginx server and RDBMS PostgreSQL on VPS",
     "img": "pexels-ifreestock-585753.jpg",
