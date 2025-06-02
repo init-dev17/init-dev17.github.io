@@ -4,7 +4,7 @@ export const websites = [
     "name": "BlablaBook",
     "title": "O'Clock School Apotheosis Project:",
     "text": "This is an online personal library management platform created by a fictitious association of reading enthusiasts.",
-    "tech": "Front: React/SASS and nginx server, Back: NodeJS/Express, Axios API, Sequelize, PostgreSQL",
+    "tech": "MCD/MLD, wireframe made on Figma, Front: React/SASS and nginx server, Back: NodeJS/Express, Axios API, Sequelize, PostgreSQL",
     "img": "blablabook.jpeg",
     "url": "https://blablabook.init17.com/",
     "font": "Satisfy",
