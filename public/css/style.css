@@ -106,12 +106,13 @@ html,
       user-select: none;
 
       display: grid;
-      grid-template-rows: 1.2fr 1.2fr 0.6fr;
+      /* grid-template-rows: 1.2fr 1.2fr 0.6fr; */
       align-items: center;
       
       
       h1{
         font-size: 2.2rem;
+        /* font-size: clamp(5px, calc(10vw + 1vw), 2.2rem);  */
         text-shadow: black 0.1em 0.1em 0.2em;
         height: 100%;
         display: flex;
@@ -119,6 +120,11 @@ html,
         align-items: center;
         border-bottom: solid 1px whitesmoke;
         }
+      h2{
+        font-size: 1.1rem;
+        margin-top: 0.5vh;
+        letter-spacing: .3px;
+      }
       p{
         color: whitesmoke;
         font-family: IBM_Plex_Sans;
@@ -126,6 +132,9 @@ html,
         letter-spacing: .3px;
         line-height: 20px;
 
+       }
+       span{
+        margin-top: 2vh;
        }
       a{
         font-size: 18px;

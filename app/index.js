@@ -26,17 +26,32 @@ for(let site in websites) {
   h1div.style.color = `${websites[site].color}`;
   h1div.innerText = `${websites[site].name}`
   newCard.append(h1div);
+
+  // Title h2
+  const newH2 = document.createElement("h2");
+  newH2.innerText = `${websites[site].title}`;
+  newCard.append(newH2);
+
+  // Description
   const newText = document.createElement("p");
   newText.innerText = `${websites[site].text}`;
   newCard.append(newText);
+
+  // Tech 
+  const newTech = document.createElement("p");
+  newTech.innerText = `${websites[site].tech}`;
+  newCard.append(newTech);
+
+
+
   let aButton = document.createElement("span");
-  aButton.innerHTML = `<a href=${websites[site].url}>Website preview</a>`;
+  aButton.innerHTML = `<a href=${websites[site].url}>View My Work</a>`;
 
   newCard.append(aButton);
 
   newSlide.append(newCard);
   swiperWrapper.append(newSlide);
   
-  console.log(newSlide);
+  // console.log(newSlide);
   
 }
